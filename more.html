@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Bootstrap-->
+        <meta name="viewport">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Micro+5&display=swap" rel="stylesheet">
+        <!--Others-->
+        <link href="styles.css" rel="stylesheet">
+        <title>More Games</title>
+        <link rel="icon" type="image/x-icon" href="Media/Assets/BM_Icon.png">
+    </head>
+
+    <body>
+<!--SIDEBAR-->
+        <div id="sidenav" onmouseover="openNav()" onmouseout="closeNav()">
+            <a href="index.html" style="max-width: min-content; display: flex; width: max-content; justify-self: center;">
+                <h1>BM</h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div>
+                            <img src="Media/Assets/Nav_Icon_Home.png" alt="Avatar" class="d-block" width="51" height="51">
+                            <h3>HOME</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <div>
+                            <img src="Media/Assets/Nav_Icon_About.png" alt="Avatar" class="d-block" width="51" height="51">
+                            <h3>ABOUT</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div id="projectNav" onmouseover="openAccord()" onmouseout="closeAccord()">
+                        <a>
+                            <div>
+                                <img src="Media/Assets/Nav_Icon_Projects.png" alt="Avatar" class="d-block" width="51" height="51">
+                                <h3>PROJECTS</h3>
+                            </div>
+
+                        </a>
+                        <div id="accordion">
+                            <ul>
+                                <li>
+                                    <a href="SotDS.html">
+                                        <h5>Stranded on The Dark Shore</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="LG.html">
+                                        <h5>Liveware Glitch</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="SoM.html">
+                                        <h5>Sea of Memories</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="more.html">
+                                        <h5>More Games</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="opacity" width="100%" height="100%">
+
+        </div>
+
+<!--LF SECTION-->
+        <section class="moregames">
+            <h1 style="margin-top: 40px;">Bernardo Martins</h1>
+            <h2 style="color: #2e554e;">More Games</h2>
+            <div class="moreintro container-fluid" style="padding-top: 0;">
+                <div class="row row-cols-2">
+            <!--GAMEPLAY-->
+                    <div class="gameplay col-7 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 511px; width: max-content;  flex-direction: column; justify-self: end; margin: 0;">
+                           <div class="frame-tab">
+                                <h4>Trailer</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <a href="https://www.youtube.com/watch?v=EYKzVzeIckA" target="_blank">
+                                    <img src="Media\Images\More Games\LF\LF_Logo.png" alt="Light Fable" width="763" height="432">
+                                </a>
+                                <video width="763" height="432" autoplay muted loop preload>
+                                    <source src="Media/Videos/LightFable - Trailer.mp4" type="video/mp4" style="width: 763px; height: 432px;">
+                                </video>
+                            </div>                            
+                        </div>
+                    </div>                    
+            <!--DESCRIPTION-->
+                    <div class="description col-5 align-top px-2 py-2">
+                        <div class="container d-flex justify-content-start py-0">
+                            <div class="frame-tab">
+                                <h4>Info</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div class="col" id="gameStats">
+                                    <div style="padding: 0;">
+                                        <p>After their home was invaded by two separate groups of predators, a small creature ends up separated from their family.</p>
+                                        <p>Now they must find their way back, under the cover of night, using their family heirloom to guide them through the journey.</p>
+                                    </div>
+                                    <div style="padding: 0;">
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>GENRE</h3>
+                                                <li>2D Stealth Platformer</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>ENGINE</h3>
+                                                <li>Unity</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>DEVELOPMENT TIME</h3>
+                                                <li>7 Months</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>TEAM SIZE</h3>
+                                                <li>3 People</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3>ROLES</h3>
+                                                <li>Game Developer</li>
+                                                <li>Level Designer</li>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-primary p-0 m-2" role="button" href="https://beetleash-studios.itch.io/light-fable" target="_blank">ITCH.IO PAGE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="moreinfo container-fluid">
+                <div class="row row-cols-2">
+        <!--TEXT-->
+                    <div class="col-6 align-content-center px-2 py-2">
+                        <div class="infoText">
+                            <p><b>Light Fable</b> is a stealth, platforming game, about freedom, home and family.</p>
+                            <p>In this project I was mainly a developer, programming mechanics in C#, but also did most of the level design for the game. </p>
+                            <p>While creating the levels, i wanted them to not be fully linear, having divergent path with different challenges
+                                (i.e. choosing between going to a longer path with more platforming obstacles or going through a shorter area with more enemies).</p>
+                        </div>
+                    </div>
+            <!--IMAGES-->
+                    <div class="col-6 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 330px; margin-right: 0; width: max-content; flex-direction: column;">
+                            <div class="frame-tab">
+                                <h4>Screenshots</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div id="carousel-1" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Media/Images/More Games/LF/LF_1.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Gameplay</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/LF/LF_5.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>platforming</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/LF/LF_4.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Climbing</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/LF/LF_2.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Development</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--NG SECTION-->
+        <section class="moregames" style="background-color: #1d2a27;">
+            <div class="moreintro container-fluid">
+                <div class="row row-cols-2">
+            <!--GAMEPLAY-->
+                    <div class="gameplay col-7 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 511px; width: max-content;  flex-direction: column; justify-self: end; margin: 0;">
+                           <div class="frame-tab">
+                                <h4>Gameplay Video</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <a href="https://www.youtube.com/watch?v=LULqzeow28Y" target="_blank">
+                                    <img src="Media\Images\More Games\NG/NG_Logo.png" alt="Light Fable" width="763" height="432">
+                                </a>
+                                <video width="763" height="432" autoplay muted loop preload>
+                                    <source src="Media/Videos/NG_Trailer.mp4" type="video/mp4" style="width: 763px; height: 432px;">
+                                </video>
+                            </div>
+                        </div>
+                    </div>                    
+            <!--DESCRIPTION-->
+                    <div class="description col-5 align-top px-2 py-2">
+                        <div class="container d-flex justify-content-start py-0">
+                            <div class="frame-tab">
+                                <h4>Info</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div class="col" id="gameStats">
+                                    <div style="padding: 0;">
+                                        <p>The space station is being attacked by an alien invasion.</p>
+                                        <p>Using the ship's gravity controls, our hero must go trough the station to collect all the part of the Escape Pod 
+                                            so they can run away from the creatures.</p>
+                                    </div>
+                                    <div style="padding: 0;">
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>GENRE</h3>
+                                                <li>2D Platformer</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>ENGINE</h3>
+                                                <li>Unity</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>DEVELOPMENT TIME</h3>
+                                                <li>2 Days</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>TEAM SIZE</h3>
+                                                <li>8 People</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3>ROLES</h3>
+                                                <li>2D Artist</li>
+                                                <li>Level Designer</li>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-primary p-0 m-2" role="button">ITCH.IO PAGE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="moreinfo container-fluid">
+                <div class="row row-cols-2">
+        <!--TEXT-->
+                    <div class="col-6 align-content-center px-2 py-2">
+                        <div class="infoText">
+                            <p><b>Null Gravity</b> is a short game created for the 2020's Global Game Jam.</p>
+                            <p>It was a simple 2D platformer with a gravity mechanic. </p>
+                        </div>
+                    </div>
+            <!--IMAGES-->
+                    <div class="col-6 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 330px; margin-right: 0; width: max-content; flex-direction: column;">
+                            <div class="frame-tab">
+                                <h4>Screenshots</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div id="carousel-2" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Media\Images\More Games\NG\NG_1.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Starting Screen</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media\Images\More Games\NG\NG_2.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Platforming</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media\Images\More Games\NG\NG_3.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Alien Enemies</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media\Images\More Games\NG\NG_4.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Collecting Escape Pod Part</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--MINIGAMES SECTION-->
+        <section class="moregames">
+            <div class="moreintro container-fluid">
+                <div class="row row-cols-2">
+            <!--GAMEPLAY-->
+                    <div class="gameplay col-7 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 511px; width: max-content;  flex-direction: column; justify-self: end; margin: 0;">
+                           <div class="frame-tab">
+                                <h4>Gameplay Video</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <a href="https://www.youtube.com/watch?v=TjLGq4ZRi4k" target="_blank">
+                                    <img src="Media/Images/More Games/Minigames/MiniGames_Logo.png" alt="Light Fable" width="763" height="432">
+                                </a>
+                                <video width="763" height="432" autoplay muted loop preload>
+                                    <source src="Media/Videos/MiniGames_Trailer.mp4" type="video/mp4" style="width: 763px; height: 432px;">
+                                </video>
+                            </div>                            
+                        </div>
+                    </div>                    
+            <!--DESCRIPTION-->
+                    <div class="description col-5 align-top px-2 py-2">
+                        <div class="container d-flex justify-content-start py-0">
+                            <div class="frame-tab">
+                                <h4>Info</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div class="col" id="gameStats">
+                                    <div style="padding: 0;">
+                                        <p>These 3 Mini-Games were created to be a part of a larger collection of mini-games, inspired by games like WarioWare.</p>
+                                    </div>
+                                    <div style="padding: 0;">
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>GENRE</h3>
+                                                <li>Minigames</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>ENGINE</h3>
+                                                <li>Dreams</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>DURATION</h3>
+                                                <li>4 Weeks</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>TEAM SIZE</h3>
+                                                <li>1 Person</li>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-bottom: 2px;">
+                                            <div class="col">
+                                                <h3>ROLES</h3>                                                
+                                                <li>Game Designer</li>
+                                                <li>Developer</li>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-primary p-0 m-2" role="button" 
+                                                href="https://indreams.me/dream/mpWiiNWyxEq" target="_blank">DREAMS PAGE</a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-top: 0;">
+                                            <div class="col d-flex">
+                                                <a class="btn btn-primary p-0 m-2" role="button" style="margin-top: 5px !important;" 
+                                                href="https://indreams.me/dream/mqaHFsJRxqw" target="_blank">DREAMS PAGE</a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-primary p-0 m-2" role="button" style="margin-top: 5px !important;" 
+                                                href="https://indreams.me/dream/mNMRJrXSuZF" target="_blank">DREAMS PAGE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="moreinfo container-fluid">
+                <div class="row row-cols-2">
+        <!--TEXT-->
+                    <div class="col-6 align-content-center px-2 py-2">
+                        <div class="infoText">
+                            <p><b>Dodge Dodge Revolution</b> is a fast reaction mini-game where you avoid obstacles with style.</p>
+                            <p><b>Bald Boxing League</b> is a fighting mini-game focused on reaction and counter-action.</p>
+                            <p><b>Baby Delivery</b> is comedic mini-game about reuniting a mother and her child.</p>
+                            <p>These projectects revolved around Simple Design and Fast Iteration, where i created challenges focused 
+                                on quick reaction gameplay, easy to grasps inputs and mechanics and funny situations.</p>
+                        </div>
+                    </div>
+            <!--IMAGES-->
+                    <div class="col-6 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 330px; margin-right: 0; width: max-content; flex-direction: column;">
+                            <div class="frame-tab">
+                                <h4>Screenshots</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div id="carousel-3" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Media/Images/More Games/Minigames/DDR_1.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Dodge Dodge Revolution</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/Minigames/DDR_2.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Dodge Dodge Revolution</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/Minigames/BBL_1.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Bald Boxing League</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/Minigames/BBL_2.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Bald Boxing League</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/Minigames/BD_1.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Baby Delivery</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/More Games/Minigames/BD_2.png" class="d-block w-100" alt="..." width="414px" height="272px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Baby Delivery</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 50px; padding: 0; background-color: #041212;">
+            <!--END OF PAGE SPACE-->
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("sidenav").style.width = "300px";
+                document.getElementById("opacity").style.visibility = "visible";
+                document.getElementById("opacity").style.backgroundColor = "rgba(0,0,0,0.5)"
+            }
+
+            function closeNav() {
+                document.getElementById("sidenav").style.width = "80px";
+                document.getElementById("opacity").style.visibility = "hidden";
+                document.getElementById("opacity").style.backgroundColor = "rgba(0,0,0,0)"
+            }
+
+            function openAccord() {
+                document.getElementById("accordion").style.maxHeight = "150px";
+            }
+
+            function closeAccord() {
+                document.getElementById("accordion").style.maxHeight = "0px";
+            }
+
+            function hidePreview(x) {
+                document.getElementById(x).style.visibility = "hidden";
+            }
+
+            function showPreview(x) {
+                document.getElementById(x).style.visibility = "visible";
+            }
+
+        </script>
+
+    </body>
+</html>

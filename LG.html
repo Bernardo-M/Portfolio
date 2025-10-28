@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Bootstrap-->
+        <meta name="viewport">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Micro+5&display=swap" rel="stylesheet">
+        <!--Others-->
+        <link href="styles.css" rel="stylesheet">
+        <title>Liveware Glitch</title>
+        <link rel="icon" type="image/x-icon" href="Media/Assets/BM_Icon.png">
+    </head>
+
+    <body>
+<!--SIDEBAR-->
+        <div id="sidenav" onmouseover="openNav()" onmouseout="closeNav()">
+            <a href="index.html" style="max-width: min-content; display: flex; width: max-content; justify-self: center;">
+                <h1>BM</h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div>
+                            <img src="Media/Assets/Nav_Icon_Home.png" alt="Avatar" class="d-block" width="51" height="51">
+                            <h3>HOME</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html"> 
+                        <div>
+                            <img src="Media/Assets/Nav_Icon_About.png" alt="Avatar" class="d-block" width="51" height="51">
+                            <h3>ABOUT</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div id="projectNav" onmouseover="openAccord()" onmouseout="closeAccord()">
+                        <a>
+                            <div>
+                                <img src="Media/Assets/Nav_Icon_Projects.png" alt="Avatar" class="d-block" width="51" height="51">
+                                <h3>PROJECTS</h3>
+                            </div>
+
+                        </a>
+                        <div id="accordion">
+                            <ul>
+                                <li>
+                                    <a href="SotDS.html">
+                                        <h5>Stranded on The Dark Shore</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="LG.html">
+                                        <h5>Liveware Glitch</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="SoM.html">
+                                        <h5>Sea of Memories</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="more.html">
+                                        <h5>More Games</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="opacity" width="100%" height="100%">
+
+        </div>
+
+<!--GAME SECTION-->
+        <section id="game">
+            <h1 style="margin-top: 40px;">Bernardo Martins</h1>
+            <h2 style="color: #2e554e;">Liveware Glitch</h2>
+            <div class="container-fluid" style="padding-top: 0;">
+                <div class="row row-cols-2">
+        <!--GAMEPLAY-->
+                    <div class="gameplay col-7 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 511px; width: max-content;  flex-direction: column; justify-self: end; margin: 0;">
+                           <div class="frame-tab">
+                                <h4>Trailer</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <a href="https://www.youtube.com/watch?v=ERxUu94t0bc" target="_blank">
+                                    <img src="Media\Images\LG_Logo.png" alt="Liveware Glitch" width="763" height="432">
+                                </a>
+                                <video width="763" height="432" autoplay muted loop preload>
+                                    <source src="Media/Videos/LivewareGlitch_Trailer.mp4" type="video/mp4" style="width: 763px; height: 432px;">
+                                </video>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+        <!--DESCRIPTION-->
+                    <div class="description col-5 align-top px-2 py-2">
+                        <div class="container d-flex justify-content-start py-0">
+                            <div class="frame-tab">
+                                <h4>Info</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div class="col" id="gameStats">
+                                    <div style="padding: 0;">
+                                        <p>In a distant future, the city of Olympia has been taken over by the Artificial Intelligence 
+                                            systems that used to protect the city.</p>
+                                        <p>Now Ika, must make her way through the shutdown city, so that her AI companion BO-X can shut down the corrupted AIs.</p>
+                                    </div>
+                                    <div style="padding: 0;">
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>GENRE</h3>
+                                                <li>3D Platformer</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>ENGINE</h3>
+                                                <li>Unreal</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-7">
+                                                <h3>DEVELOPMENT TIME</h3>
+                                                <li>8 Months</li>
+                                            </div>
+                                            <div class="col">
+                                                <h3>TEAM SIZE</h3>
+                                                <li>3 People</li>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3>ROLES</h3>
+                                                <li>Game Designer</li>
+                                                <li>Level Designer</li>
+                                                <li>Project Manager</li>
+                                            </div>
+                                            <div class="col">
+                                                <a class="btn btn-primary p-0 m-2" role="button" href="https://indreams.me/dream/mDcrvVSqFAC" target="_blank">ITCH.IO PAGE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--INFO SECTION RIGHT-->
+        <section class="infoRight">
+            <div class="container-fluid">
+                <div class="row row-cols-2">
+        <!--TEXT-->
+                    <div class="col-5 align-content-center px-2 py-2">
+                        <div class="infoTextRgt">
+                            <p><b>Liveware Glitch</b> is a parkour inspired platformer, with Cyberpunk aesthetics.</p>
+                            <p>Working with a small team, I created the gameplay and world of the game to focus on movement and speed.</p>
+                            <p>I was responsible for the Game and Level Design, but also worked on the world-building and characters with the rest of the team.</p>
+                        </div>
+                    </div>
+            <!--IMAGES-->
+                    <div class="col-7 align-top px-2 py-2 justify-content-start">
+                        <div class="container d-flex justify-content-start py-0" style="height: 438px; padding-left: 60px; margin-left: 0; width: max-content; flex-direction: column;">
+                            <div class="frame-tab">
+                                <h4>Screenshots</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div id="carousel-1" class="carousel slide" data-bs-ride="false">
+                                   <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Media/Images/LG/LG_1.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5 style="color: #43b29a;">Platforming</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/LG_2.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Olympia</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/LG_3.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Hacking</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/LG_4.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Olympia</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--INFO SECTION LEFT-->
+        <section class="infoLeft">
+            <div class="container-fluid">
+                <div class="row row-cols-2">
+            <!--IMAGES-->
+                    <div class="col-7 align-top px-2 py-2 justify-content-end">
+                        <div class="container d-flex justify-content-end py-0" style="height: 438px; padding-right: 60px; margin-right: 0; width: max-content; flex-direction: column;">
+                            <div class="frame-tab">
+                                <h4>Development</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div id="carousel-2" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Media/Images/LG/Level_WIP_1.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Level Blockout</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/Level_WIP_2.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Early Development</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/Level_WIP_3.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Level Blockout</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/LG_Loop.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Gameplay Loop</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+            <!--TEXT-->
+                    <div class="col-5 align-content-center px-2 py-2">
+                        <div class="infoTextLft">
+                            <p>From the beginning, Liveware Glitch was focused on movement and fluid platforming.</p>
+                            <p>We brainstormed various ideas, and refined the movement mechanics with the intent of making the platforming satisfying and fun.</p>
+                            <p>The intent was to make the gameplay easy to grasp but to leave room for players to improve and master the mechanics on their own.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--INFO SECTION RIGHT-->
+        <section class="infoRight">
+            <div class="container-fluid">
+                <div class="row row-cols-2">
+        <!--TEXT-->
+                    <div class="col-5 align-content-center px-2 py-2">
+                        <div class="infoTextRgt">
+                            <p>I designed the world of the Vertical Slice to be a large, open path, so that the player's had enough space to use the movement mechanics 
+                                to the fullest and to feel powerful while performing great leaps and maneuvers.</p>
+                            <p>The level was linear but on a very open area, so I had to pay close attention to the navigation and signposting of the level, 
+                                putting a great emphasis on color and light to guide the player.</p>
+                        </div>
+                    </div>
+            <!--IMAGES-->
+                    <div class="col-7 align-top px-2 py-2 justify-content-start">
+                        <div class="container d-flex justify-content-start py-0" 
+                        style="height: 438px; padding-left: 60px; margin-left: 0; width: max-content; flex-direction: column;">
+                            <div class="frame-tab">
+                                <h4>Final Product</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <div id="carousel-3" class="carousel slide" data-bs-ride="false">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carousel-3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="Media/Images/LG/Level_1.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Final Level</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/Level_2.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Gameplay</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/Level_4.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Final Level</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="Media/Images/LG/Level_3.png" class="d-block w-100" alt="..." width="672px" height="378px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Gameplay</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="height: 50px; padding: 0; background-color: #1d2a27;">
+            <!--END OF PAGE SPACE-->
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("sidenav").style.width = "300px";
+                document.getElementById("opacity").style.visibility = "visible";
+                document.getElementById("opacity").style.backgroundColor = "rgba(0,0,0,0.5)"
+            }
+
+            function closeNav() {
+                document.getElementById("sidenav").style.width = "80px";
+                document.getElementById("opacity").style.visibility = "hidden";
+                document.getElementById("opacity").style.backgroundColor = "rgba(0,0,0,0)"
+            }
+
+            function openAccord() {
+                document.getElementById("accordion").style.maxHeight = "150px";
+            }
+
+            function closeAccord() {
+                document.getElementById("accordion").style.maxHeight = "0px";
+            }
+
+            function hidePreview(x) {
+                document.getElementById(x).style.visibility = "hidden";
+            }
+
+            function showPreview(x) {
+                document.getElementById(x).style.visibility = "visible";
+            }
+
+        </script>
+
+    </body>
+</html>

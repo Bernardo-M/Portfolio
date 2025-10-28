@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Bootstrap-->
+        <meta name="viewport">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Micro+5&display=swap" rel="stylesheet">
+        <!--Others-->
+        <link href="styles.css" rel="stylesheet">
+        <title>Bernardo Martins</title>
+        <link rel="icon" type="image/x-icon" href="Media/Assets/BM_Icon.png">
+    </head>
+
+    <body>
+<!--SIDEBAR-->
+        <div id="sidenav" onmouseover="openNav()" onmouseout="closeNav()">
+            <a href="index.html" style="max-width: min-content; display: flex; width: max-content; justify-self: center;">
+                <h1>BM</h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div>
+                            <img src="Media/Assets/Nav_Icon_Home.png" alt="Avatar" class="d-block" width="51" height="51">
+                            <h3>HOME</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <div>
+                            <img src="Media/Assets/Nav_Icon_About.png" alt="Avatar" class="d-block" width="51" height="51">
+                            <h3>ABOUT</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div id="projectNav" onmouseover="openAccord()" onmouseout="closeAccord()">
+                        <a>
+                            <div>
+                                <img src="Media/Assets/Nav_Icon_Projects.png" alt="Avatar" class="d-block" width="51" height="51">
+                                <h3>PROJECTS</h3>
+                            </div>
+
+                        </a>
+                        <div id="accordion">
+                            <ul>
+                                <li>
+                                    <a href="SotDS.html">
+                                        <h5>Stranded on The Dark Shore</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="LG.html">
+                                        <h5>Liveware Glitch</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="SoM.html">
+                                        <h5>Sea of Memories</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="more.html">
+                                        <h5>More Games</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="opacity" width="100%" height="100%">
+
+        </div>
+
+<!--INTRO SECTION-->
+        <section id="intro">
+            <h1 style="margin-top: 40px;">Bernardo Martins</h1>
+            <h2 style="color: #2e554e;">Game/Level Designer</h2>
+            <div class="container-fluid" style="padding-bottom: 0; padding-top: 0;">                
+                <div class="row row-cols-2">
+        <!--PORTRAIT-->
+                    <div id="portrait" class="col-5 align-top px-2 py-2">
+                        <div class="container d-flex justify-content-end py-0" style="width: max-content; flex-direction: column; justify-self: end; margin: 0;">
+                            <div class="frame-tab">
+                                <h4>Hello There!</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <img src="Media/Images/SelfPortrait_Animated.gif" id="avatar" alt="Avatar" class="d-block" width="384" height="384">
+                            </div>
+                        </div>
+                        <div class="row justify-content-end m-0 px-2 py-2" style="padding-top: 6px !important; margin-right: 9px !important;">
+                            <a href="about.html" class="btn btn-secondary p-0 m-2" role="button">ABOUT ME</a>
+                            <a class="btn btn-primary p-0 m-2" role="button" href="BernardoMartins_GameLevelDesign_CV.pdf" target="_blank">RESUME</a>
+                        </div>
+                    </div>
+        <!--SHOWCASE-->
+                    <div id="showcase" class="col-7 align-top px-2 py-2 justify-content-start">
+                        <div class="container d-flex justify-content-start py-0" style="height: 511px; width: max-content;  flex-direction: column; justify-self: start; margin: 0;">
+                           <div class="frame-tab">
+                                <h4>Projects</h4>
+                                <img src="Media/Assets/Tab_Icons_Dark.png">
+                            </div>
+                            <div class="frame-window">
+                                <video width="763" height="432" autoplay muted loop preload>
+                                    <source src="Media/Videos/PORTFOLIO_HIGHLIGHTS.mp4" type="video/mp4">
+                                </video>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--BACKGROUND SECTION-->
+        <section id="background">
+            <div class="container-fluid py-0">
+                <div class="row row-cols-2 py-1">
+        <!--EXPERIENCE-->
+                    <div id="experience" class="col-5 align-top px-2 py-2">
+                        <h2>WORK</h2>
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>2023</h5>
+                                <h3>RED DAGGER</h3>
+                                <h6>Game Designer</h6>
+                                <img src="Media/Assets/Work_RED.png" width="72" height="72">
+                            </div>
+                            <div class="col">
+                                <p>Worked within a small team to create a mobile game and other projects.</p>
+                                <p>Brainstormed game concepts and themes.</p>
+                                <p>Defined mechanics, gameplay and retention loops, monetization strategies and others, while composing the documentation of the project.</p>
+                                <p>Designed the levels and narrative of the projects.</p>
+                            </div>
+                        </div>
+                        <h2 style="margin-top: 45px !important;">EDUCATION</h2>
+                        <div class="row justify-content-end">
+                            <div class="col-7">
+                                <h5>2023 - 2024</h5>
+                                <h3>GAME DESIGN</h3>
+                                <h6>Post-Graduate at IADE</h6>
+                                <img src="Media/Assets/Work_IADE.png" width="72" height="72">
+                            </div>
+                            <div class="col">
+                                <p>Deepened knowledge in Game and Level Design.</p>
+                                <p>Researched UX Design and Accessibility in videogames.</p>
+                                <p>Developed small projects and practiced fast prototyping.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <h5>2019 - 2022</h5>
+                                <h3>GAMES & MULTIMEDIA</h3>
+                                <h6>Bachelor's Degree at ESTG</h6>
+                                <img src="Media/Assets/Work_ESTG.png" width="72" height="72">
+                            </div>
+                            <div class="col">
+                                <p>Studied various areas of game development, including Design, Art and Programming, with professors and through personal research.</p>
+                                <p>Learned how to use various software and methodologies.</p>
+                                <p>Worked with and lead small teams of colleagues.</p>
+                                <p>Developed a variety of games, from conception to a finished Vertical Slice.</p>
+                            </div>
+                        </div>
+                    </div>
+        <!--PROJECTS-->
+                    <div id="projects" class="col-7 position-relative align-top px-2 py-2">
+                        <h2 style="width: 720px; margin-left: 82px;">PROJECTS</h2>
+                        <!--SOTDS-->
+                        <div class="project-tab row px-0 py-1" onmouseover="hidePreview('SotDSLogo')" onmouseout="showPreview('SotDSLogo')" onclick="goToPage('SotDS.html')">
+                            <div class="visual-tab">
+                                <h4>Stranded on the Dark Shore</h4>
+                                <img src="Media/Assets/Tab_Icons_Light.png">
+                            </div>
+                            <div class="visual-window d-flex">
+                                <div class="col p-2">
+                                   <a>
+                                        <img src="Media/Images/SotDS_Logo.png" id="SotDSLogo" class="preview" width="294" height="168" preload>
+                                    </a>
+                                    <img src="Media/Images/StrandedOnTheDarkShoreHighlights.gif" class="preview" width="294" height="168">
+                                </div>
+                                <div class="col p-1 d-flex" style="flex-direction: column; justify-content: center;">
+                                    <p> <b>GENRE:</b> 3D 1st Person Puzzle</p>
+                                    <p> <b>ROLES:</b> Game Designer | Level Designer</p>
+                                    <p> <b>ENGINE:</b> Dreams</p>
+                                    <p class="synopsis">A Lovecraft-inspired puzzle game, following the journey of a lone castaway through an mysterious island, 
+                                        as they explore its eerie structures and mystical artifacts.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!--LG-->
+                        <div class="project-tab row px-0 py-1" onmouseover="hidePreview('LGLogo')" onmouseout="showPreview('LGLogo')" onclick="goToPage('LG.html')">
+                            <div class="visual-tab">
+                                <h4>Liveware Glitch</h4>
+                                <img src="Media/Assets/Tab_Icons_Light.png">
+                            </div>
+                            <div class="visual-window d-flex">
+                                <div class="col p-2">
+                                   <a>
+                                        <img src="Media/Images/LG_Logo.png" id="LGLogo" class="preview" width="294" height="168" preload>
+                                    </a>
+                                    <img src="Media/Images/LivewareGlitchHighlights.gif" class="preview" width="294" height="168">
+                                </div>
+                                <div class="col p-1 d-flex" style="flex-direction: column; justify-content: center;">
+                                    <p> <b>GENRE:</b> 3D 3rd Person Action Platformer</p>
+                                    <p> <b>ROLES:</b> Game Designer | Level Designer | Project Manager</p>
+                                    <p> <b>ENGINE:</b> Unreal Engine</p>
+                                    <p class="synopsis">A cyberpunk, fast paced platformer, where a young hero tries to save a flying metropolis from the 
+                                        control of corrupted AIs.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!--SoM-->
+                        <div class="project-tab row px-0 py-1" onmouseover="hidePreview('SoMLogo')" onmouseout="showPreview('SoMLogo')" onclick="goToPage('SoM.html')">
+                            <div class="visual-tab">
+                                <h4>Sea of Memories</h4>
+                                <img src="Media/Assets/Tab_Icons_Light.png">
+                            </div>
+                            <div class="visual-window d-flex">
+                                <div class="col p-2">
+                                   <a>
+                                        <img src="Media/Images/SoM_Logo.png" id="SoMLogo" class="preview" width="294" height="168" preload>
+                                    </a>
+                                    <img src="Media/Images/SeaOfMemoriesHighlights.gif" class="preview" width="294" height="168">
+                                </div>
+                                <div class="col p-1 d-flex" style="flex-direction: column; justify-content: center;">
+                                    <p> <b>GENRE:</b> 3D 1st/3rd Person Puzzle</p>
+                                    <p> <b>ROLES:</b> Game Designer | Level Designer | Project Manager</p>
+                                    <p> <b>ENGINE:</b> Unreal Engine</p>
+                                    <p class="synopsis">The story of Eleanor, a widow living the fantastical world of her late husband's book as she explores 
+                                        an underwater mansion with her fish companion.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                        <!--MG-->
+                        <div class="project-tab row px-0 py-1" onmouseover="hidePreview('MGLogo')" onmouseout="showPreview('MGLogo')" onclick="goToPage('more.html')">
+                            <div class="visual-tab">
+                                <h4>More Games</h4>
+                                <img src="Media/Assets/Tab_Icons_Light.png">
+                            </div>
+                            <div class="visual-window d-flex">
+                                <div class="col p-2">
+                                   <a>
+                                        <img src="Media/Images/MG_Logo.png" id="MGLogo" class="preview" width="294" height="168" preload>
+                                    </a>
+                                    <img src="Media/Images/MoreGamesHighlights.gif" class="preview" width="294" height="168">
+                                </div>
+                                <div class="col p-1 d-flex" style="flex-direction: column; justify-content: center;">
+                                    <p> <b>GENRE:</b> 2D Platformers | Minigames</p>
+                                    <p> <b>ROLES:</b> Designer | 2D Artist | Developer</p>
+                                    <p> <b>ENGINE:</b> Unity | Dreams</p>
+                                    <p class="synopsis">A few smaller games that i worked on.</p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 50px; padding: 0; background-color: #1d2a27;">
+            <!--END OF PAGE SPACE-->
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("sidenav").style.width = "300px";
+                document.getElementById("opacity").style.visibility = "visible";
+                document.getElementById("opacity").style.backgroundColor = "rgba(0,0,0,0.5)"
+            }
+
+            function closeNav() {
+                document.getElementById("sidenav").style.width = "80px";
+                document.getElementById("opacity").style.visibility = "hidden";
+                document.getElementById("opacity").style.backgroundColor = "rgba(0,0,0,0)"
+            }
+
+            function openAccord() {
+                document.getElementById("accordion").style.maxHeight = "150px";
+            }
+
+            function closeAccord() {
+                document.getElementById("accordion").style.maxHeight = "0px";
+            }
+
+            function hidePreview(x) {
+                document.getElementById(x).style.opacity = "0";
+            }
+
+            function showPreview(x) {
+                document.getElementById(x).style.opacity = "100%";
+            }
+
+            function goToPage(x) {
+                location.href = x;
+            }
+        </script>
+
+    </body>
+</html>
