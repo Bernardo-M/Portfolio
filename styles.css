@@ -779,6 +779,7 @@ p {
     height: 438px;
     padding: 0 !important;
     margin-top: 8px;
+    display: grid;
 }
 
 .infoLeft .col-5 {
