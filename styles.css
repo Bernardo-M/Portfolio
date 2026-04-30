@@ -1280,6 +1280,22 @@ p {
     #about-text .row {
         flex-wrap: wrap !important;
     }
+
+    #sidenav #accordion li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 70px;
+    }
+
+    #sidenav #accordion li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 70px;
+    }
+
+    #sidenav #accordion li h5 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 1100px){
