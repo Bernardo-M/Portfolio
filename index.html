@@ -20,7 +20,7 @@
     <body>
 <!--SIDEBAR-->
         <div id="sidenav" onmouseover="openNav()" onmouseout="closeNav()">
-            <a href="index.html" style="max-width: min-content; display: inline-grid; width: max-content; justify-self: center;">
+            <a href="index.html" style="max-width: min-content; display: flex; width: max-content; justify-self: center;">
                 <h1>BM</h1>
             </a>
             <ul>
@@ -88,8 +88,8 @@
             <div class="container-fluid" style="padding-bottom: 0; padding-top: 0;">                
                 <div class="row row-cols-2">
         <!--PORTRAIT-->
-                    <div id="portrait" class="col-5 align-top px-2 py-2 d-grid">
-                        <div class="container d-flex justify-content-end py-0" style="width: max-content; flex-direction: column; justify-self: end; margin: 0;">
+                    <div id="portrait" class="col-5 align-top px-2 py-2">
+                        <div class="container d-flex justify-content-end px-2 py-0" style="width: max-content; flex-direction: column; justify-self: end; margin: 0;">
                             <div class="frame-tab">
                                 <h4>Hello There!</h4>
                                 <img src="Media/Assets/Tab_Icons_Dark.png">
@@ -98,14 +98,14 @@
                                 <img src="Media/Images/SelfPortrait_Animated.gif" id="avatar" alt="Avatar" class="d-block" width="384" height="384">
                             </div>
                         </div>
-                        <div class="row justify-content-end m-0 px-2 py-2" style="padding-top: 6px !important; margin-right: 9px !important;">
+                        <div class="row justify-content-end px-2 py-2" style="padding-top: 6px !important; margin-right: 1%;">
                             <a href="about.html" class="btn btn-secondary p-0 m-2" role="button">ABOUT ME</a>
-                            <a class="btn btn-primary p-0 m-2" role="button" href="BernardoMartins_CV.pdf" target="_blank">RESUME</a>
+                            <a class="btn btn-primary p-0 m-2" role="button" href="BernardoMartins_GameLevelDesign_CV.pdf" target="_blank">RESUME</a>
                         </div>
                     </div>
         <!--SHOWCASE-->
-                    <div id="showcase" class="col-7 align-top px-2 py-2 justify-content-start">
-                        <div class="container d-flex justify-content-start py-0" style="height: 511px; width: max-content;  flex-direction: column; justify-self: start; margin: 0;">
+                    <div id="showcase" class="col-7 align-top px-0 py-2 justify-content-start">
+                        <div class="container d-flex justify-content-start py-0" style="height: fit-content; width: max-content;  flex-direction: column; justify-self: start; margin: 0;">
                            <div class="frame-tab">
                                 <h4>Projects</h4>
                                 <img src="Media/Assets/Tab_Icons_Dark.png">
@@ -125,7 +125,7 @@
             <div class="container-fluid py-0">
                 <div class="row row-cols-2 py-1">
         <!--EXPERIENCE-->
-                    <div id="experience" class="col-5 align-top px-2 py-2 d-grid">
+                    <div id="experience" class="col-5 align-top px-2 py-2">
                         <h2>WORK</h2>
                         <div class="row">
                             <div class="col-7">
@@ -141,7 +141,7 @@
                                 <p>Designed the levels and narrative of the projects.</p>
                             </div>
                         </div>
-                        <h2 style="margin-top: 45px !important;">EDUCATION</h2>
+                        <h2 style="margin-top: 45px;">EDUCATION</h2>
                         <div class="row justify-content-end">
                             <div class="col-7">
                                 <h5>2023 - 2024</h5>
@@ -171,8 +171,8 @@
                         </div>
                     </div>
         <!--PROJECTS-->
-                    <div id="projects" class="col-7 position-relative align-top px-2 py-2">
-                        <h2 style="width: 720px; margin-left: 82px;">PROJECTS</h2>
+                    <div id="projects" class="col-7 position-relative align-top px-0 py-2">
+                        <h2 style="width: 80%; margin-left: 5%;">PROJECTS</h2>
                         <!--SOTDS-->
                         <div class="project-tab row px-0 py-1" onmouseover="hidePreview('SotDSLogo')" onmouseout="showPreview('SotDSLogo')" onclick="goToPage('SotDS.html')">
                             <div class="visual-tab">

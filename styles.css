@@ -321,14 +321,8 @@ p {
     width: fit-content;
 }
 
-#showcase a {
-    position: absolute;
-    width: 170px;
-    z-index: 1;
-    align-self: end;
-    justify-self: end;
-    margin-bottom: 37px;
-    margin-right: 45px;
+#showcase .container {
+    padding-left: 5%;
 }
 
 /*EXPERIENCE*/
@@ -357,7 +351,8 @@ p {
 }
 
 #experience h2 {
-    padding-left: 150px;
+    padding-left: 20%;
+    width: 100%;
 }
 
 #experience img {
@@ -397,8 +392,8 @@ p {
 }
 
 .project-tab {
-    width: 750px;
-    margin-left: 70px;
+    width: 80%;
+    margin-left: 5%;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -418,13 +413,15 @@ p {
 }
 
 #idcard {
-    margin: 20px 0;
+    margin: 20px 20px;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 95%;
+    min-width: fit-content;
     height: 85%;
+    min-height: fit-content;
     background-color: #1d2a27;
 }
 
@@ -444,16 +441,15 @@ p {
     text-align: start;
 }
 
-#idcard li {
+#idcard ul {
     justify-self: start;
-    list-style-position: outside;
     line-height: 20px;
     font-family: "Micro 5", sans-serif;
     color: #c0fbee;
     text-align: start;
     font-size: 30px;
     text-wrap-mode: nowrap;
-    text-indent: -9px;
+    padding-left: 0;
 }
 
 #idcard ::marker {
@@ -514,12 +510,15 @@ p {
     border-color: #43b29a;
     border-style: solid;
     padding: 0px;
-    margin-right: 40px;
     margin-bottom: 40px;
 }
 
 #pratical-skills .d-flex {
     padding: 15px 20px 20px 40px;
+}
+
+#pratical-skills .d-flex img {
+    align-self: center;
 }
 
 #pratical-skills p {
@@ -541,15 +540,19 @@ p {
     border-color: #43b29a;
     border-style: solid;
     padding: 0px;
-    margin-right: 40px;
 }
 
 #softwares .d-flex {
     padding: 10px 20px 15px 60px;
 }
 
+#softwares .d-flex img {
+    align-self: center;
+}
+
 #softwares .col h4 {
     line-height: 25px;
+    margin-bottom: 0;
 }
 
 #softwares .col {
@@ -567,6 +570,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding-left: 40px;
 }
 
 #current .row {
@@ -597,9 +601,26 @@ p {
 }
 
 /*GAMES*/
+#game .row-cols-2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-right: 10px;
+}
+
+
 .gameplay {
     display: flex;
     align-items: flex-end;
+}
+
+.gameplay .container {
+    min-width: fit-content;
+    height: 511px;
+    width: max-content; 
+    flex-direction: column;
+    justify-self: end;
+    margin: 0;
 }
 
 .gameplay a {
@@ -628,7 +649,7 @@ p {
 }
 
 .description {
-    padding-left: 80px !important;
+    padding-left: 5% !important;
     padding-bottom: 20px !important;
     align-self: center;
     height: 527px;
@@ -692,7 +713,6 @@ p {
 #gameStats .col a {
     width: max-content;
     padding: 0px 5px 0px 6px !important;
-    margin-top: 20px !important;
 }
 
 .infoTextRgt {
@@ -779,7 +799,6 @@ p {
     height: 438px;
     padding: 0 !important;
     margin-top: 8px;
-    display: grid;
 }
 
 .infoLeft .col-5 {
@@ -884,4 +903,394 @@ p {
     text-indent: 10px;
     margin-bottom: 20px;
     margin-left: 50px;
+}
+
+
+@media screen and (min-width: 2000px){
+    .project-tab {
+        width: 870px;
+    }
+
+    #projects h2 {
+        width: 870px !important;
+    }
+    
+}
+
+@media screen and (max-width: 1750px){
+    .project-tab {
+        width: 90%;
+    }
+
+    #projects h2 {
+        width: 90% !important;
+    }
+    
+}
+
+@media screen and (max-width: 1500px){
+    #avatar {
+        width: 256px;
+        height: 256px;
+    }
+
+    #portrait .row {
+        margin-right: 0 !important;
+    }
+
+    #portrait .btn {
+        margin-right: 1% !important;
+    }
+
+    #intro video {
+        width: 508px;
+        height: 288px;
+    }
+
+    #game .row-cols-2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 10px;
+    }
+    
+    .gameplay {
+        width: 90%;
+        justify-content: center !important;
+        align-self: center;
+    }
+
+    .gameplay img {
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .description {
+        padding-left: 8px !important;
+        height: 20%;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: fit-content;
+        margin: 0 20px;
+    }
+
+    .description .container {
+        min-width: fit-content;
+    }
+
+    #gameStats {
+        max-width: 100%;
+        min-height: fit-content;
+    }
+
+    #gameStats p {
+        margin-bottom: 5px;
+        max-width: 900px;
+    }
+    
+    .stats-lists {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #gameStats .col {
+        width: fit-content;
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #gameStats .col a {
+        margin-top: 0 !important;
+    }
+
+    .infoRight .carousel {
+        width: 508px !important;
+        height: 288px !important;
+    }
+
+    .infoLeft .carousel {
+        width: 508px !important;
+        height: 288px !important;
+    }
+
+    .carousel-item {
+        height: 100% !important;
+    }
+
+    .carousel img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .carousel-control-next {
+        height: auto;
+    }
+
+    .carousel-control-prev {
+        height: auto;
+    }
+
+    .carousel-caption {
+        margin-right: -60px;
+    }
+
+    .moreintro .row-cols-2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #pratical-skills .d-flex {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #pratical-skills .d-flex img {
+        height: 68px;
+        width: 68px;
+    }
+
+    #pratical-skills .d-flex .col {
+        padding-left: 5px;
+        padding-right: 30px;
+    }
+
+    #softwares .d-flex {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+
+    #softwares .d-flex img {
+        height: 44px;
+        width: 44px;
+    }
+
+    #softwares .d-flex .col{
+        padding-right: 10px;
+    }
+
+    #current {
+        padding-left: 0;
+    }
+
+    #bio .col-4 img {
+        height: 256px;
+        width: 256px;
+    }
+
+    #idcard  .d-flex .col {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #background {
+        padding: 20px 100px 0 100px;
+    }
+
+    #background .row-cols-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 4px;
+    }
+
+    #experience .col-7 {
+        width: 30%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #experience .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #experience h2 {
+        padding-left: 0;
+        margin-top: 20px !important;
+    }
+
+    #experience p {
+        max-width: 100%;
+    }
+
+    #projects {
+        width: 100%;
+    }
+
+    #projects h2 {
+        width: 100% !important;
+    }
+
+    .project-tab {
+        width: 100%;
+    }
+
+    #experience {
+        width: 100%;
+    }
+    
+    #game .row-cols-2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .description .container{
+        min-width: 60%;
+        max-width: 80%;
+    }
+
+    .stats-lists .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoRight .container-fluid {
+        padding-bottom: 0;
+    }
+
+    .infoLeft .container-fluid {
+        padding-bottom: 0;
+    }
+
+    .infoRight .col-5 {
+        height: fit-content;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .infoLeft .col-5 {
+        height: fit-content;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .infoRight .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .infoLeft .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .infoRight .col-7 {
+        width: fit-content !important;
+    }
+
+    .infoLeft .col-7 {
+        height: fit-content !important;
+        width: fit-content !important;
+        padding-right: 12px !important;
+    }
+
+    .infoRight .col-7 .container {
+        height: fit-content !important;
+        width: fit-content !important;
+        padding-left: 12px !important;
+    }
+
+    .infoLeft .col-7 .container {
+        height: fit-content !important;
+        width: fit-content !important;
+        padding-right: 12px !important;
+    }
+    
+    .infoTextRgt {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .infoTextLft {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .moreinfo .row-cols-2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: fit-content;
+    }
+
+    .moreinfo .col-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .moreinfo .col-6 .container{
+        margin-left: 0;
+    }
+
+    .moreinfo p {
+        margin-left: 0;
+    }
+
+    #background .row-cols-2 {
+        flex-direction: column;
+    }
+
+    #skills {
+        width: 90%;
+        align-self: center;
+        align-items: center;
+    }
+
+    #pratical-skills {
+        margin-bottom: 20px;
+    }
+
+    #softwares {
+        margin-bottom: 5px;
+    }
+
+    #current {
+        width: 90%;
+        align-self: center;
+        align-items: center;
+    }
+
+    #current .py-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #about-text .row {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #showcase .container {
+        padding-left: 0% !important;
+    }
+    #background {
+        padding: 30px 70px 0 70px;
+    }
+    
+    #idcard {
+        margin: 10px;
+    }
 }
